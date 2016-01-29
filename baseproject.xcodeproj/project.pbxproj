@@ -113,6 +113,7 @@
 				A9E86E081C5BB72E00B0766D /* Resources */,
 				6B82ABC19DE6E158412C55BA /* Embed Pods Frameworks */,
 				CF107EC1E6650BCCD9EB5B11 /* Copy Pods Resources */,
+				A9B9BC741C5BD380001AFC77 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -183,6 +184,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-baseproject/Pods-baseproject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A9B9BC741C5BD380001AFC77 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" b018ab7dbb0451742e0b804f5d0e5d3f018472fe 65754cc7da598f57a242af199b62135aa5c658c29a4f87dd45e6e659c804ca77";
 		};
 		CF107EC1E6650BCCD9EB5B11 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -265,6 +279,10 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"ADHOC=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -284,12 +302,17 @@
 			baseConfigurationReference = 5AEC2AAECCA3B1C38A68328C /* Pods-baseproject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: PREP4S LTD (N7VY2S63K3)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Baytree SA (7JV6NDFZ59)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Baytree SA (7JV6NDFZ59)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = baseproject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baytree.baseproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9d573f1f-9948-41a0-9ddc-2f857c9e12e8";
+				PROVISIONING_PROFILE = "7f1fe3a5-f8af-4306-950d-4e5157d118f5";
 			};
 			name = AdHoc;
 		};
@@ -361,6 +384,10 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"RELEASE=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -380,11 +407,13 @@
 			baseConfigurationReference = 75136C3AE1C5CB2EA2EB316C /* Pods-baseproject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = baseproject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baytree.baseproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -393,12 +422,17 @@
 			baseConfigurationReference = 5AEC2AAECCA3B1C38A68328C /* Pods-baseproject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: PREP4S LTD (N7VY2S63K3)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Baytree SA (7JV6NDFZ59)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Baytree SA (7JV6NDFZ59)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = baseproject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baytree.baseproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ba0644d8-772f-48ca-ba7c-7a7f7ddd54a6";
+				PROVISIONING_PROFILE = "ad7eb671-8665-42a3-8a41-dc11e947fda7";
 			};
 			name = Release;
 		};

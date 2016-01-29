@@ -14,6 +14,8 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
+  - Crashlytics (3.6.0):
+    - Fabric (~> 1.6.3)
   - Fabric (1.6.4)
   - Mantle (2.0.6):
     - Mantle/extobjc (= 2.0.6)
@@ -27,6 +29,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - Crashlytics
   - Fabric
   - Mantle
   - Masonry
@@ -36,6 +39,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  Crashlytics: e4e8d02914f2608fbc7bf42b1a7af838b0db67a2
   Fabric: ed41fd62173c6bdea24ab02c9d7707161eabb750
   Mantle: 299966b00759634931699f69cb6a30b9239b944d
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2

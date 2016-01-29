@@ -7,6 +7,7 @@ inhibit_all_warnings!
 target 'baseproject' do
     pod 'AFNetworking'
     pod 'Fabric'
+    pod 'Crashlytics'
     pod 'Mantle'
     pod 'Masonry'
     pod 'SDWebImage'

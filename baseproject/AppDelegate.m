@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 
 #import "FBTweakShakeWindow.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface AppDelegate ()
 
@@ -20,12 +22,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
-#ifdef DEBUG
+#ifndef RELEASE
     self.window = [[FBTweakShakeWindow alloc] initWithFrame:screenBounds];
 #else
     self.window = [[UIWindow alloc] initWithFrame:screenBounds];
 #endif
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    UIViewController *rootVC = [UIViewController new];
+    rootVC.view.backgroundColor = [UIColor redColor];
+    
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:rootVC];
+    
+    self.window.rootViewController = navVC;
+    
+    [self.window makeKeyAndVisible];
+    
+    [Fabric with:@[[Crashlytics class]]];
     
     return YES;
 }
