@@ -1,0 +1,50 @@
+### OSX ###
+Swift/.DS_Store
+ObjectiveC/.DS_Store
+
+###ObjectiveC/ ###
+### Xcode ###
+ObjectiveC/build/
+ObjectiveC/*.pbxuser
+ObjectiveC/!default.pbxuser
+ObjectiveC/*.mode1v3
+ObjectiveC/!default.mode1v3
+ObjectiveC/*.mode2v3
+ObjectiveC/!default.mode2v3
+ObjectiveC/*.perspectivev3
+ObjectiveC/!default.perspectivev3
+ObjectiveC/xcuserdata
+ObjectiveC/*.xccheckout
+ObjectiveC/*.moved-aside
+ObjectiveC/DerivedData
+ObjectiveC/*.xcuserstate
+
+### Cocoapods ###
+ObjectiveC/Pods
+
+### Unity ###
+ObjectiveC/Unity/Libraries/libiPhone-lib.a
+
+###Swift/ ###
+### Xcode ###
+Swift/build/
+Swift/*.pbxuser
+Swift/!default.pbxuser
+Swift/*.mode1v3
+Swift/!default.mode1v3
+Swift/*.mode2v3
+Swift/!default.mode2v3
+Swift/*.perspectivev3
+Swift/!default.perspectivev3
+Swift/xcuserdata
+Swift/*.xccheckout
+Swift/*.moved-aside
+Swift/DerivedData
+Swift/*.xcuserstate
+
+### Cocoapods ###
+Swift/Pods
+
+
+### Unity ###
+Swift/Unity/Libraries/libiPhone-lib.a
